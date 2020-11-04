@@ -1,0 +1,13 @@
+.reactCarousel {
+  .inside {
+    display: flex;
+    align-items: flex-start;
+    width: 200px;
+    display: inline-block;
+    img {
+      object-fit: cover;
+    }
+    p {
+    }
+  }
+}

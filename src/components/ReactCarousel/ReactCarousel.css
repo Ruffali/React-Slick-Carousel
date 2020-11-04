@@ -1,0 +1,119 @@
+/* import ExpandLessIcon from '@material-ui/icons/ExpandLess'; */
+
+.rct {}
+
+.rct .slick-slider {}
+
+.rct .slick-initialized {}
+
+.rct .slick-slider .slick-list {}
+
+.rct .slick-slider .slick-list .slick-track {}
+
+.rct .slick-slider .slick-list .slick-track .slick-slide {}
+
+.rct .slick-slider .slick-list .slick-track .slick-slide div {}
+
+.rct .slick-slider .slick-list .slick-track .slick-slide div .inside {
+    position: relative;
+    width   : 100%;
+    height  : 100vh;
+}
+
+.rct .slick-slider .slick-list .slick-track .slick-slide div .inside img {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : inherit;
+    height    : inherit;
+    object-fit: cover;
+}
+
+.rct .slick-slider .slick-list .slick-track .slick-slide div .inside p {}
+
+.rct .slick-slider .slick-arrow {}
+
+.rct .slick-slider .slick-prev {}
+
+.rct .slick-slider .slick-next {}
+
+.rct .slick-slider .slick-dots {
+    position       : absolute;
+    transform      : rotate(90deg) translateY(50%);
+    width          : 450px;
+    top            : 0px;
+    right          : -87px;
+    display        : flex !important;
+    justify-content: space-around;
+    align-items    : baseline;
+}
+
+.rct .slick-slider .slick-dots::before {
+    content      : "";
+    position     : absolute;
+    top          : 13px;
+    left         : 5px;
+    width        : 97%;
+    height       : 3px;
+    border-bottom: 2px solid #00acee;
+    z-index      : 10;
+}
+
+.rct .slick-slider .slick-dots li {
+    width: calc(100%/3);
+}
+
+.rct .slick-slider .slick-dots li button {
+    display: none;
+}
+
+.rct .slick-slider .slick-dots li.slick-active {
+    /* position: absolute; */
+    height    : 6px;
+    background: #10A0C1;
+}
+
+.rct .slick-slider .slick-dots li button {}
+
+.rct .slick-slider .slick-dots li button::after {}
+
+.slides .slick-prev,
+.slides .slick-next {
+    position     : absolute;
+    z-index      : 1;
+    width        : 36px;
+    height       : 36px;
+    border-radius: 50%;
+    overflow     : hidden;
+    left         : 94%;
+}
+
+.slides .slick-prev {
+    top: 47%;
+}
+
+.slides .slick-next {
+    top: 53%;
+}
+
+.slides .slick-next::before,
+.slides .slick-prev::before {
+    position       : absolute;
+    width          : 100%;
+    height         : 100%;
+    background     : rgba(255, 255, 255, 0.3);
+    display        : block;
+    top            : 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding-left   : 1px;
+}
+
+.slides .slick-next::before {
+    content: url('./img/down.svg');
+}
+
+.slides .slick-prev::before {
+    content: url('./img/up.svg');
+}
